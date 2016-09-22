@@ -1,7 +1,7 @@
 package com.github.aag.iban
 
 class Validator {
-  def validate(countryCode: String, checkSum: String, bban: String): Boolean = {
+  def isValid(countryCode: String, checkSum: String, bban: String): Boolean = {
     if (countryCode.toUpperCase() != "DE") {
       throw new IllegalArgumentException("Only Germany is currently supported")
     }
